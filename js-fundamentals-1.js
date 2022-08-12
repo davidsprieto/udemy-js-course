@@ -2,7 +2,7 @@
 
 /*
 // 08/08/22
-// Values & Variables - NOTES
+// Values & Variables:
 let js = 'amazing';
 console.log(40 + 8 + 23 - 10);
 
@@ -14,8 +14,6 @@ let firstName = "David";
 console.log(firstName);
 
 console.log(js);
-
-// Values & Variables - ASSIGNMENT
 
 // 1. Declare variables called 'country', 'continent', and 'population' and assign their values according to your own country (population in millions).
 let country = "United States of America";
@@ -30,7 +28,7 @@ console.log(population);
 
 /*
 // 08/10/22
-// Data Types - NOTES
+// Data Types:
 let javascriptIsFun = true;
 console.log(javascriptIsFun);
 
@@ -52,7 +50,7 @@ console.log(typeof year);
 
 console.log(typeof null);
 
-// Let, Const, & Var - NOTES
+// Let, Const, & Var:
 let age = 30;
 console.log(age);
 age = 31;
@@ -68,8 +66,8 @@ job = "student";
 console.log(job);
 
 
-// Basic Operators
-// Math operators
+// Basic Operators:
+// Math operators:
 const now = 2022;
 const ageDavid = now - 1993;
 console.log(ageDavid);
@@ -84,7 +82,7 @@ const firstName = "David";
 const lastName = "Prieto";
 console.log(firstName + " " + lastName); // Concatenating
 
-// Assignment operators
+// Assignment operators:
 let x = 10 + 5;
 x += 10; // 25
 x *= 4; // 100
@@ -93,7 +91,7 @@ x--; // 100
 console.log(x);
 
 
-// Comparison operators ( >, <, >=, <= )
+// Comparison operators ( >, <, >=, <= ):
 console.log(ageDavid > ageKelly);
 console.log(ageKelly >= 18);
 
@@ -158,8 +156,9 @@ let markHigherBMI2 = markBMI2 > johnBMI2;
 console.log(markHigherBMI2);
  */
 
+/*
 // 08/12/22
-// Template Strings
+// Template Strings:
 const firstName = "David";
 const job = "Programmer";
 const birthYear = 1993;
@@ -168,7 +167,7 @@ const year = 2022;
 const david = "I'm " + firstName + ", a " + (year - birthYear) + " year old " + job + "!";
 console.log(david);
 
-// ES6 Template Strings
+// ES6 Template Strings:
 const davidNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`;
 console.log(davidNew);
 
@@ -185,7 +184,8 @@ console.log(`String with
 multiple
 lines`);
 
-// If / Else Statements
+
+// If / Else Statements:
 const age = 15;
 const yearsLeft = 18 - age;
 
@@ -204,6 +204,7 @@ if(birthYearAgain <= 2000) {
     century = 21 + "st";
 }
 console.log(century);
+ */
 
 ////////// Coding Challenge #2 //////////
 
@@ -225,6 +226,7 @@ Your tasks:
 2. Use a template literal to include the BMI values in the outputs. Example:"Mark's BMI (28.3) is higher than John's (23.9)!"
  */
 
+/*
 // Data 1:
 let markWeight1 = 78;
 let markHeight1 = 1.69;
@@ -258,3 +260,27 @@ if(markBMI2 > johnBMI2) {
 } else {
     console.log(`John's BMI (${johnBMI2}) is higher than Mark's (${markBMI2})!`);
 }
+ */
+
+/*
+// Type Conversion & Coercion:
+// Type Conversion:
+const inputYear = `1993`; // input from a user is a string data type
+console.log(Number(inputYear), (inputYear));
+console.log(Number(inputYear) + 18);
+
+console.log(Number(`David`)); // NaN
+console.log(typeof NaN); // Number
+
+console.log(String(23), (23));
+
+// Type Coercion:
+console.log(`I am ` + 23 + ` years old`); // Number converted to a string because of type coercion. "+" operator triggers JavaScript to convert a number to a string because the number is in between two strings.
+console.log(`23` - `10` - `3`); // 10
+console.log(`23` + `10` - `3`); // 2307
+console.log(`23` / `2`); // 11.5
+console.log(`23` * `2`); // 46
+ */
+
+// 08/14/22
+// Truthy & Falsy Values:
