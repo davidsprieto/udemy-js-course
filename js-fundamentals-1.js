@@ -282,5 +282,54 @@ console.log(`23` / `2`); // 11.5
 console.log(`23` * `2`); // 46
  */
 
-// 08/14/22
+/*
 // Truthy & Falsy Values:
+// 5 Falsy Values: 0, '', undefined, null, NaN
+console.log(Boolean(0)); // --> false
+console.log(Boolean(undefined)); // --> false
+console.log(Boolean(`David`)); // --> true
+console.log(Boolean({})); // --> true
+console.log(Boolean(``)); // --> false
+
+const money = 100;
+if(money) {
+    console.log(`Don't spend it all.`);
+} else {
+    console.log(`You should get a job.`);
+}
+
+let height = 0;
+if(height) {
+    console.log(`Height is defined.`);
+} else {
+    console.log(`Height is NOT defined.`);
+}
+ */
+
+/*
+// Equality Operators --> '==' (loose comparison, performs type coercion) and '===' (strict comparison, does NOT perform type coercion):
+const age = 18;
+
+if(age === 18) console.log(`You're 18!`);
+
+console.log(`18` == 18); // --> true
+
+console.log(`18` === 18); // --> false
+
+const userFavorite = Number(prompt(`What is your favorite number?`));
+console.log(userFavorite);
+console.log(typeof userFavorite); // --> string (user input is always a string data type)
+
+if(userFavorite === 23) {
+    console.log(`Michael Jordan all day.`)
+} else if (userFavorite === 24) {
+    console.log(`Black mamba, respect.`);
+} else {
+    console.log(`Not a cool number.`);
+}
+
+if(userFavorite !== 23) console.log(`Why not 23?`);
+ */
+
+
+// 08/
