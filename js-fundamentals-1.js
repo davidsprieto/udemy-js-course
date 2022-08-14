@@ -332,4 +332,6 @@ if(userFavorite !== 23) console.log(`Why not 23?`);
  */
 
 
-// 08/
+// 08/15/22
+// Basic Boolean Logic (Logical Operators): The "&&", "||" and "!"
+
