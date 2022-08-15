@@ -332,6 +332,68 @@ if(userFavorite !== 23) console.log(`Why not 23?`);
  */
 
 
+/*
 // 08/15/22
 // Basic Boolean Logic (Logical Operators): The "&&", "||" and "!"
+const hasDriversLicense = true;
+const hasGoodVision = true;
 
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+
+const isTired = false;
+console.log(hasDriversLicense && hasGoodVision && isTired);
+
+if (hasDriversLicense && hasGoodVision && !isTired) {
+    console.log("Capable of driving!");
+} else {
+    console.log("Not capable of driving...");
+}
+ */
+
+////////// Coding Challenge #3 //////////
+
+/*
+There are two gymnastics teams, Dolphins and Koalas. They compete against each other 3 times. The winner with the highest average score wins a trophy!
+Your tasks:
+1. Calculate the average score for each team, using the test data below
+2. Compare the team's average scores to determine the winner of the competition,
+and print it to the console. Don't forget that there can be a draw, so test for that as well (draw means they have the same average score)
+3. Bonus1: Include a requirement for a minimum score of 100. With this rule, a
+team only wins if it has a higher score than the other team, and at the same time has a score of at least 100 points. Hint: Use a logical operator to test for minimum score, as well as multiple else-if blocks 😉
+4. Bonus2: Minimum score also applies to a draw! So a draw only happens when both teams have the same score and both have a score greater or equal 100 points. Otherwise, no team wins the trophy
+Test data:
+§ Data 1: Dolphins score 96, 108 and 89. Koalas score 88, 91 and 110.
+§ Data Bonus 1: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 123
+§ Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106.
+ */
+
+let dolphinsAverageScore1 = (96 + 108 + 89) / 3;
+let koalasAverageScore1 = (88 + 91 + 110) / 3;
+console.log(`Dolphins score: ${dolphinsAverageScore1}`, `Koalas score: ${koalasAverageScore1}`);
+
+let dolphinsAverageScore2 = (97 + 112 + 101) / 3;
+let koalasAverageScore2 = (109 + 95 + 123) / 3;
+console.log(`Dolphins score: ${dolphinsAverageScore2}`, `Koalas score: ${koalasAverageScore2}`);
+
+let dolphinsAverageScore3 = (97 + 112 + 101) / 3;
+let koalasAverageScore3 = (109 + 95 + 106) / 3;
+console.log(`Dolphins score: ${dolphinsAverageScore3}`, `Koalas score: ${koalasAverageScore3}`);
+
+function result (dolphinsAverageScore, koalasAverageScore) {
+    if (dolphinsAverageScore > koalasAverageScore && (dolphinsAverageScore && koalasAverageScore >= 100)) {
+        return ("Dolphins win!");
+    } else if (koalasAverageScore > dolphinsAverageScore && (dolphinsAverageScore && koalasAverageScore >= 100)) {
+        return ("Koalas win!");
+    } else if (dolphinsAverageScore === koalasAverageScore && (dolphinsAverageScore && koalasAverageScore >= 100)) {
+        return ("It's a draw!");
+    } else {
+        return ("There is no winner...");
+    }
+}
+console.log(result(dolphinsAverageScore1, koalasAverageScore1));
+
+console.log(result(dolphinsAverageScore2, koalasAverageScore2));
+
+console.log(result(dolphinsAverageScore3, koalasAverageScore3));
