@@ -382,9 +382,9 @@ let koalasAverageScore3 = (109 + 95 + 106) / 3;
 console.log(`Dolphins score: ${dolphinsAverageScore3}`, `Koalas score: ${koalasAverageScore3}`);
 
 function result (dolphinsAverageScore, koalasAverageScore) {
-    if (dolphinsAverageScore > koalasAverageScore && (dolphinsAverageScore && koalasAverageScore >= 100)) {
+    if (dolphinsAverageScore > koalasAverageScore && dolphinsAverageScore >= 100) {
         return ("Dolphins win!");
-    } else if (koalasAverageScore > dolphinsAverageScore && (dolphinsAverageScore && koalasAverageScore >= 100)) {
+    } else if (koalasAverageScore > dolphinsAverageScore && koalasAverageScore >= 100) {
         return ("Koalas win!");
     } else if (dolphinsAverageScore === koalasAverageScore && (dolphinsAverageScore && koalasAverageScore >= 100)) {
         return ("It's a draw!");
