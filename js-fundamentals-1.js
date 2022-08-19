@@ -352,7 +352,7 @@ if (hasDriversLicense && hasGoodVision && !isTired) {
 }
  */
 
-////////// Coding Challenge #3 //////////
+//////// Coding Challenge #3 //////////
 
 /*
 There are two gymnastics teams, Dolphins and Koalas. They compete against each other 3 times. The winner with the highest average score wins a trophy!
@@ -369,6 +369,7 @@ Test data:
 § Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106.
  */
 
+/*
 let dolphinsAverageScore1 = (96 + 108 + 89) / 3;
 let koalasAverageScore1 = (88 + 91 + 110) / 3;
 console.log(`Dolphins score: ${dolphinsAverageScore1}`, `Koalas score: ${koalasAverageScore1}`);
@@ -397,3 +398,109 @@ console.log(result(dolphinsAverageScore1, koalasAverageScore1));
 console.log(result(dolphinsAverageScore2, koalasAverageScore2));
 
 console.log(result(dolphinsAverageScore3, koalasAverageScore3));
+ */
+
+/*
+// 08/19/22
+// Switch Statement:
+const day = `Yesterday`;
+
+switch(day) {
+    case `Monday`: // day === `Monday`
+        console.log(`Plan course structure`);
+        console.log(`Go to coding meetup`);
+        break;
+    case `Tuesday`:
+        console.log(`Prepare theory videos`);
+        break;
+    case `Wednesday`:
+    case `Thursday`:
+        console.log(`Write code examples`);
+        break;
+    case `Friday`:
+        console.log(`Record videos`);
+        break;
+    case `Saturday`:
+    case `Sunday`:
+        console.log(`Enjoy the weekend`);
+        break;
+    default:
+        console.log(`Not a valid day`);
+}
+
+// Convert switch statement to if/else statement:
+
+if (day === `Monday`) {
+    console.log(`Plan course structure\nGo to coding meetup`);
+} else if (day === `Tuesday`) {
+    console.log(`Prepare theory videos`);
+} else if (day === `Wednesday` || day === `Thursday`) {
+    console.log(`Write code examples`);
+} else if (day === `Friday`) {
+    console.log(`Record videos`);
+} else if (day === `Saturday` || day === `Sunday`) {
+    console.log(`Enjoy the weekend`);
+} else {
+    console.log(`Not a valid day`);
+}
+
+// Statements and Expressions:
+// expressions produce values
+// statements can be described as full sentences
+console.log(3 + 4); // expression
+console.log(1991); // expression
+console.log(true || (true && false)); // expression
+
+if (23 > 10) {
+    const string = `23 is greater`;
+} // statement
+
+const me = `David`;
+console.log(`My name is ${me} and I'm ${2022 - 1993} years old.`);
+ */
+
+/*
+// Ternary (Conditional) Operator:
+const age = 28;
+age >= 18 ? console.log(`I like to drink wine`) : console.log(`I can't drink yet...`);
+
+const drink = age >= 18 ? `wine` : `water`;
+console.log(drink);
+
+let drink2;
+if (age >= 18) {
+    drink2 = `wine`;
+} else {
+    drink2 = `water`;
+}
+console.log(drink2);
+
+console.log(`I like to drink ${age >= 18 ? `wine` : `water`}`);
+ */
+
+//////// Coding Challenge #4 //////////
+
+/*
+Steven wants to build a very simple tip calculator for whenever he goes eating in a restaurant. In his country,
+it's usual to tip 15% if the bill value is between 50 and 300. If the value is different, the tip is 20%.
+Your tasks:
+1. Calculate the tip, depending on the bill value. Create a variable called 'tip' for this.
+It's not allowed to use an if/else statement 😅 (If it's easier for you, you can start with an if/else statement,
+and then try to convert it to a ternary operator!)
+2. Print a string to the console containing the bill value, the tip, and the final value (bill + tip).
+Example: “The bill was 275, the tip was 41.25, and the total value 316.25”
+Test data:
+§ Data 1: Test for bill values 275, 40 and 430 Hints:
+§ To calculate 20% of a value, simply multiply it by 20/100 = 0.2
+§ Value X is between 50 and 300, if it's >= 50 && <= 300😉
+GOOD LUCK 😀
+ */
+
+// let bill = 275;
+// let bill = 40;
+let bill = 430;
+
+const tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.20;
+let total = tip + bill;
+
+console.log(`The bill was $${bill}, the tip was $${tip}, making the total: $${total}.`);
