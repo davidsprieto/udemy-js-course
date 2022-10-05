@@ -91,10 +91,10 @@ console.log(fruitProcessor(2, 3));
 
 const calcAverage = (num1, num2, num3) => {return (num1 + num2 + num3) / 3}
 
-function checkWinner (avgDolphins, avgKoalas) {
-    if (avgDolphins > avgKoalas * 2) {
+const checkWinner = function (avgDolphins, avgKoalas) {
+    if (avgDolphins >= avgKoalas * 2) {
         console.log(`Dolphins win (${avgDolphins} vs. ${avgKoalas})`);
-    } else if (avgKoalas > avgDolphins * 2) {
+    } else if (avgKoalas >= avgDolphins * 2) {
         console.log(`Koalas win (${avgKoalas} vs. ${avgDolphins})`);
     } else {
         console.log("No winner");
