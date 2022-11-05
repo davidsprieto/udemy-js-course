@@ -89,24 +89,61 @@ console.log(fruitProcessor(2, 3));
 // Coding Challenge #1:
 // See PDF for Challenge Details
 
-const calcAverage = (num1, num2, num3) => {return (num1 + num2 + num3) / 3}
+// const calcAverage = (num1, num2, num3) => {return (num1 + num2 + num3) / 3}
+//
+// const checkWinner = function (avgDolphins, avgKoalas) {
+//     if (avgDolphins >= avgKoalas * 2) {
+//         console.log(`Dolphins win (${avgDolphins} vs. ${avgKoalas})`);
+//     } else if (avgKoalas >= avgDolphins * 2) {
+//         console.log(`Koalas win (${avgKoalas} vs. ${avgDolphins})`);
+//     } else {
+//         console.log("No winner");
+//     }
+// }
+//
+// // Test Data 1:
+// const avgDolphins1 = calcAverage(44, 23, 71);
+// const avgKoalas1 = calcAverage(65, 54, 49);
+// checkWinner(avgDolphins1, avgKoalas1);
+//
+// // Test Data 2:
+// const avgDolphins2 = calcAverage(85, 54, 41);
+// const avgKoalas2 = calcAverage(23, 34, 27);
+// checkWinner(avgDolphins2, avgKoalas2);
 
-const checkWinner = function (avgDolphins, avgKoalas) {
-    if (avgDolphins >= avgKoalas * 2) {
-        console.log(`Dolphins win (${avgDolphins} vs. ${avgKoalas})`);
-    } else if (avgKoalas >= avgDolphins * 2) {
-        console.log(`Koalas win (${avgKoalas} vs. ${avgDolphins})`);
-    } else {
-        console.log("No winner");
-    }
+const friend1 = 'Michael';
+const friend2 = 'Steven';
+const friend3 = 'Peter';
+
+const friends = ['Michael', 'Steven', 'Peter'];
+console.log(friends);
+console.log(friends.length);
+console.log(friends.length - 1);
+console.log(friends[0]);
+console.log(friends[2]);
+friends[2] = 'Jay';
+console.log(friends);
+
+const years = new Array(4);
+years[0] = 1991;
+years[1] = 1984;
+years[2] = 2008;
+years[3] = 2020;
+console.log(years);
+
+const firstName = 'Jonas';
+const jonas = [firstName, 'Schmedtmann', 2037 - 1991, 'teacher', friends];
+console.log(jonas);
+console.log(jonas.length);
+
+const calcAge = function (birthYear) {
+    return 2037 - birthYear;
 }
 
-// Test Data 1:
-const avgDolphins1 = calcAverage(44, 23, 71);
-const avgKoalas1 = calcAverage(65, 54, 49);
-checkWinner(avgDolphins1, avgKoalas1);
+const age1 = calcAge(years[0]);
+const age2 = calcAge(years[1]);
+const age3 = calcAge(years[years.length - 1]);
+console.log(age1, age2, age3);
 
-// Test Data 2:
-const avgDolphins2 = calcAverage(85, 54, 41);
-const avgKoalas2 = calcAverage(23, 34, 27);
-checkWinner(avgDolphins2, avgKoalas2);
+const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
+console.log(ages);
