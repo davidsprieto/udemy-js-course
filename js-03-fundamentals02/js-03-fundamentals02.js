@@ -187,3 +187,38 @@ console.log(fruitProcessor(2, 3));
 //     console.log('Peter found');
 // }
 
+// 11/14/2022
+// Coding Challenge #2:
+// See PDF for Challenge Details
+
+// function tip(bill) {
+//     let tip;
+//     if (bill >= 50 && bill <= 300) {
+//         tip = 0.15;
+//     } else {
+//         tip = 0.20;
+//     }
+//     return (bill * tip);
+// }
+// console.log(tip(100));
+//
+//
+// // above function rewritten:
+// const calcTip = function(bill) {
+//     return bill >= 50 && bill <= 300 ? (bill * 0.15) : (bill * 0.20);
+// }
+// console.log(calcTip(100));
+//
+// // another way to write the above functions:
+// const calculateTip = (bill) => (bill >= 50 && bill <= 300) ? (bill * 0.15) : (bill * 0.20);
+// console.log(calculateTip(100));
+//
+// let bills = [125, 555, 44];
+//
+// let tips = [tip(bills[0]), tip(bills[1]), tip(bills[2])];
+//
+// let totals = new Array(tips.length);
+// for (let i = 0; i < totals.length; i++) {
+//     totals[i] = bills[i] + tips[i];
+// }
+// console.log(totals);
