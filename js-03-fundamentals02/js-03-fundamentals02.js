@@ -222,3 +222,26 @@ console.log(fruitProcessor(2, 3));
 //     totals[i] = bills[i] + tips[i];
 // }
 // console.log(totals);
+
+// 11/17/2022
+// Objects:
+
+// const object = {
+//     firstName: 'David',
+//     lastName: 'Prieto',
+//     age: 28,
+//     job: 'student',
+//     friends: ['Bob', 'Joe', 'Bill']
+// };
+// console.log(object);
+//
+// object.location = 'United States';
+// object['GitHub'] = '@davidsprieto';
+//
+// console.log(object);
+//
+// // Challenge: "David has 3 friends, and his best friend is called Bob."
+// let sentence = `${object.firstName} has ${object.friends.length} friends, and his best friend is called ${object.friends[0]}.`;
+// console.log(sentence);
+
+// Object Methods:
