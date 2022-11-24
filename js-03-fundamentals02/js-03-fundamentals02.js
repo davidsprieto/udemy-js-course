@@ -244,5 +244,26 @@ console.log(fruitProcessor(2, 3));
 // let sentence = `${object.firstName} has ${object.friends.length} friends, and his best friend is called ${object.friends[0]}.`;
 // console.log(sentence);
 
-// 11/
+// 11/23/2022
 // Object Methods:
+
+// const david = {
+//     firstName: 'David',
+//     lastName: 'Prieto',
+//     birthYear: 1993,
+//     job: 'student',
+//     friends: ['Bob', 'Joe', 'Bill'],
+//     hasDriversLicense: true,
+//     setAge: function() {
+//         return this.age = 2022 - this.birthYear;
+//     },
+//     getSummary: function() {
+//         return `${this.firstName} is a ${this.setAge()} -year old ${this.job}, and he has ${this.hasDriversLicense ? "a" : "no"} driver's license`;
+//     }
+// };
+//
+// console.log(david.setAge());
+// console.log(david.age);
+//
+// console.log(david.getSummary());
+
